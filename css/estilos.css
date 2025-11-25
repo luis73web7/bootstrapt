@@ -1,0 +1,66 @@
+/* configuración inicial */
+
+@font-face {
+    font-family:fuente ;
+    src: url(../fuente/Arimo-Regular.ttf);
+}
+:root {
+  --blanco: #fff;
+  --negro: #000;
+  --gris: #6c757d;
+  --azul: #0d6efd;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #ee0979;
+  --red: #dc3545;
+  --orange: #ff6a00;
+  --yellow: #ffc107;
+  --green: #198754;
+  --teal: #20c997;
+  --cyan: #0dcaf0;
+
+ --fuente:fuente;
+}
+
+.fondo-navbar{
+  
+    filter: opacity(0.5);
+    filter: blur(5);
+}
+.btn:hover{
+    background-color:var(--pink) !important;
+    opacity: 0.5;
+    filter: blur(0.5px);
+    color:whitesmoke !important;
+}
+
+body{
+    font-family: var(--fuente) !important;
+}
+
+.sombra-texto{
+    text-shadow: 5px 5px 9px grey;
+}
+.btn-primary{
+    background-color:var(--orange);
+    border-color: var(--blanco) !important;
+    
+}
+
+.ancho-boton{
+    width: clamp(120px, 40vw, 180px)!important;
+}
+
+.alto-footer{
+    height: 100px;
+}
+.fondo-hero{
+    background-image: url(../imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;;
+}
+
+
+
