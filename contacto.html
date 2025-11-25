@@ -38,49 +38,24 @@
 
 
         <div class="container px-5 my-5">
-            <form class="w-75 mx-auto" id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form class="w-75 mx-auto" id="contactForm" action="https://formsubmit.co/luis73web7@gmail.com" method="POST">
                 <div class="form-floating mb-3">
-                    <input class="form-control" id="nombre" type="text" placeholder="Nombre"
-                        data-sb-validations="required" />
-                    <label for="nombre">Nombre</label>
-                    <div class="invalid-feedback" data-sb-feedback="nombre:required">Nombre is required.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="correo" type="email" placeholder="Correo"
-                        data-sb-validations="required,email" />
-                    <label for="correo">Correo</label>
-                    <div class="invalid-feedback" data-sb-feedback="correo:required">Correo is required.</div>
-                    <div class="invalid-feedback" data-sb-feedback="correo:email">Correo Email is not valid.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="telefono" type="text" placeholder="Teléfono"
-                        data-sb-validations="required" />
-                    <label for="telefono">Teléfono</label>
-                    <div class="invalid-feedback" data-sb-feedback="telefono:required">Teléfono is required.</div>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" id="mensaje" type="text" placeholder="Mensaje" style="height: 10rem;"
-                        data-sb-validations="required"></textarea>
-                    <label for="mensaje">Mensaje</label>
-                    <div class="invalid-feedback" data-sb-feedback="mensaje:required">Mensaje is required.</div>
-                </div>
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        <p>To activate this form, sign up at</p>
-                        <a
-                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    <div class="grupo p-3">
+                        <label class="form-label for="" ">Nombre</label>
+                        <input class="form-control" name="nombre" type="text" placeholder="Escribir nombre">
                     </div>
-                </div>
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-                <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
-                </div>
+                    <div class="grupo p-3">
+                        <label class="form-label for="" ">Correo</label>
+                        <input class="form-control" name="email" type="email" placeholder="correo@email.com">
+                    </div>
+                    <div class="grupo p-3">
+                        <label class="form-label for="" ">Consulta</label>
+                        <textarea class="form-control" name="consulta" id="" placeholder="Escriba su consulta"></textarea>
+                    </div>
+                <button class="btn btn-danger btn-lg d-block mx-auto">Enviar</button>
             </form>
         </div>
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       
   
 
     <div class="container text-white bg-black alto-footer d-flex justify-content-center align-content-center">
