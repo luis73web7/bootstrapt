@@ -38,7 +38,7 @@
 
 
         <div class="container px-5 my-5">
-            <form class="w-75 mx-auto" id="contactForm" action="https://formsubmit.co/luis73web7@gmail.com" method="POST">
+            <form class="w-75 mx-auto"  action="https://formsubmit.co/luis73web7@gmail.com" method="POST">
                 <div class="form-floating mb-3">
                     <div class="grupo p-3">
                         <label class="form-label for="" ">Nombre</label>
@@ -52,6 +52,9 @@
                         <label class="form-label for="" ">Consulta</label>
                         <textarea class="form-control" name="consulta" id="" placeholder="Escriba su consulta"></textarea>
                     </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://examluis73web.netlify.app/">
+                    <input type="hidden" name="_template" value="table">
                 <button class="btn btn-danger btn-lg d-block mx-auto">Enviar</button>
             </form>
         </div>
